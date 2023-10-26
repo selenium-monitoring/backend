@@ -1,0 +1,18 @@
+= API Documentation
+
+== Ping Endpoint
+
+This endpoint is used to check the availability of the API.
+
+=== Request
+
+[horizontal]
+* Method: `GET`
+* URL: `/api/ping`
+
+=== Response
+
+* Status Code: `204 No Content`
+* Description: Indicates the API is up and running.
+
+[![Build and Test Gin Gonic API](https://github.com/selenium-monitoring/backend/actions/workflows/build.yml/badge.svg)](https://github.com/selenium-monitoring/backend/actions/workflows/build.yml)
