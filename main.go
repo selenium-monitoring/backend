@@ -9,11 +9,10 @@ import (
 func setupRouter() *gin.Engine {
 	r := gin.Default()
 
-	apiGroup := r.Group("/api")
+	apiGroup := r.Group("/api/v1")
 	apiGroup.GET("/ping", func(c *gin.Context) {
 		c.Status(http.StatusNoContent)
 	})
-
 	return r
 }
 
