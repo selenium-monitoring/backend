@@ -1,4 +1,4 @@
-name: Docker Image CI for GHCR
+name: Docker Image CI for GHCR HB
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./main.go
+        working-directory: main.go
 
     steps:
       - name: Checkout Repository
