@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./path/to/your/application
+        working-directory: ../main.go
 
     steps:
       - name: Checkout Repository
