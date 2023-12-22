@@ -20,7 +20,7 @@ jobs:
         run: | 
           docker login --username ${DOCKER_USERNAME} --password ${{ secrets.GH_PAT }} ghcr.io
           docker build . --tag ghcr.io/${DOCKER_USERNAME}/selenium-backend-ghcr:latest
-          docker push ghcr.io/selenium-monitoring/selenium-backend-ghcr:latest
+          docker push ghcr.io/${DOCKER_USERNAME}/selenium-backend-ghcr:latest
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
